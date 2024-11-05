@@ -17,7 +17,8 @@
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start": "init-backend && cd .medusa/server && medusa start --verbose",
     "dev": "medusa develop",
-    "email:dev": "email dev --dir=./src/modules/email-notifications/templates --port=3002"
+    "email:dev": "email dev --dir=./src/modules/email-notifications/templates --port=3002",
+    "predeploy": "medusa db:migrate"
   },
   "dependencies": {
     "@medusajs/admin-sdk": "latest",
